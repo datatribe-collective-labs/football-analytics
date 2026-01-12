@@ -20,6 +20,13 @@ The Lookup activity reads this JSON file to determine the extraction parameters 
 
 As a result, the pipeline separates the incoming data into dedicated folders for football clubs' information, players' information, league standings, top scorers, and team data.
 
+<div align="center">
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Databricks%20Pipeline.png?raw=true" />
+  <br>
+   <sub><b>Fig 1.</b> Workflow</sub>
+</div>
+
+
 #### Meddallion Architecture using the Inman data Model
 The project continues with the implementation of a medallion architecture using the Inman data model on Azure Databricks for analytics-wide data consistency and integrity. In the Bronze layer, raw data is ingested in its native JSON format, transformed into tabular structures, partitioned, and appended to Delta Lake tables.
 
