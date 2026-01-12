@@ -12,7 +12,7 @@ This project presents an end-to-end data engineering solution for analyzing foot
 <br>
 
 
-The project focuses on a composite analytics pipeline for football events in the English Premier League for the 2025/2026 season. It started with the creation of a data lake designed to ingest batch data every week, since league matches are played every weekend.
+In our quest to prepare a composite analytics pipeline for football events in the English Premier League for the 2025/2026 season, we started with the creation of a data lake designed to ingest batch data every week, since league matches are played every weekend.
 
 To support this, we built a parameterized pipeline in Azure Data Factory to extract data from the Football-Data API (https://www.football-data.org/) and load it into Azure Data Lake Storage. The pipeline makes use of Lookup, ForEach, and Copy activities.
 
