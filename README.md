@@ -23,7 +23,7 @@ As a result, the pipeline separates the incoming data into dedicated folders for
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Databricks%20Pipeline.png?raw=true" />
   <br>
-   <sub><b>Fig 1.</b> Workflow</sub>
+   <sub><b>Fig 1.</b>Medallion Architectural Pipeline</sub>
 </div>
 
 
