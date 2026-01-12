@@ -1,6 +1,6 @@
 ## Implementing Football Analytics Pipeline Using Azure, Databricks, and Delta Lake
 <!-- <br> -->
-#### Data Extraction & loading Pipeline
+#### Data Extraction & loading Pipeline.
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
   <br>
