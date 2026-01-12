@@ -1,5 +1,8 @@
 ## Implementing Football Analytics Pipeline Using Azure, Databricks, and Delta Lake
 <!-- <br> -->
+
+This project presents an end-to-end data engineering solution for analyzing football events in the English Premier League during the 2025/2026 season. The goal is to design a scalable, automated, and analytics-ready data platform that ingests weekly football activities data and transforms it to support analysis over the course of the season.
+
 #### Data Extraction & loading Pipeline.
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
