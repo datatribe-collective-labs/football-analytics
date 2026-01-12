@@ -1,8 +1,10 @@
+#### Data Extraction & loading Pipeline
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
   <br>
-   <sub><b>Data Factory Pipeline</b> Workflow</sub>
+   <sub><b>Data Factory Pipeline</b></sub>
 </div>
+<br>
 
 
 The project focuses on a composite analytics pipeline for football events in the English Premier League for the 2025/2026 season. It started with the creation of a data lake designed to ingest batch data every week, since league matches are played every weekend.
