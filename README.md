@@ -1,7 +1,7 @@
 <div align="center">
-  <img src=" https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
   <br>
-   <sub><b>Fig 1.</b> Workflow</sub>
+   <sub><b>Data Factory Pipeline</b> Workflow</sub>
 </div>
 
 
