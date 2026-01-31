@@ -45,3 +45,11 @@ In addition to the dimension tables, the project includes two fact tables. These
 Before being written to the Gold layer in Delta Lake, the final datasets were optimized using coalesce to reduce the number of output partitions. This was considered to help minimize small files, produce BI-friendly file sizes, and improve query performance for downstream analytics workloads.
 
 Ultimately, the entire pipeline is scheduled to run every week to stay aligned with the latest English Premier League match results.
+
+#### Weekly Performance Dashboard.
+<div align="center">
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Football%20analytics%20dashboard.png?raw=true" />
+  <br>
+   <sub><b>Data Factory Pipeline</b></sub>
+</div>
+<br>
