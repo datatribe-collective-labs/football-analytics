@@ -23,7 +23,7 @@ bronze_season = (
 
 bronze_season.write \
     .format("delta") \
-        .mode("append") \
+        .mode("overwrite") \
             .partitionBy("ingestion_ts") \
             .option("path","abfss://bronze@footballanalyticstorage.dfs.core.windows.net/season_info") \
                 .saveAsTable("db_ws.bronze.season_info")
