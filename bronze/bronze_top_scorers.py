@@ -39,7 +39,7 @@ display(bronze_top_scorers)
 # Write data to delta lake and save as table
 bronze_top_scorers.write \
     .format("delta") \
-        .mode("append") \
+        .mode("overwrite") \
             .partitionBy("ingestion_ts") \
             .option("path","abfss://bronze@footballanalyticstorage.dfs.core.windows.net/top_scorers") \
                 .saveAsTable("db_ws.bronze.top_scorers")
