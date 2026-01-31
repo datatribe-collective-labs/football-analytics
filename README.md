@@ -1,7 +1,15 @@
 ## Implementing Football Analytics Pipeline Using Azure, Databricks, Delta Lake and Databricks AI/BI
 <!-- <br> -->
 
-This project presents an end-to-end data engineering solution for analyzing football events in the English Premier League during the 2025/2026 season. The goal is to design a scalable, automated, and analytics-ready data platform that ingests weekly football activities data and transforms it to support analysis over the course of the season.
+## Problem Statement
+Football leagues evolve every week, with each matchday potentially varying league positions, manager performance views, and player impact on team outcomes. However, stakeholders often rely on fragmented reports or static league tables that fail to capture how performance changes week by week and what drives those changes.
+This creates a challenge for decision-makers who need to quickly assess:
+-how league standings shift after each weekend,
+-whether managers are maintaining or improving their win effectiveness over time,
+-which players are consistently contributing through goals and assists,
+-and how team scoring intensity develops across the season.
+
+This project presents an end-to-end data engineering solution for analyzing football events in the English Premier League during the 2025/2026 season, addresses this challenge by providing a weekly updated, season-level analytical view that integrates league standings, manager win rates, player performance metrics, and team scoring efficiency.
 
 #### Data Extraction & loading Pipeline.
 <div align="center">
