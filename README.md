@@ -32,7 +32,7 @@ The Lookup activity reads this JSON file to determine the extraction parameters 
 As a result, the pipeline separates the incoming data into dedicated folders for football clubs' information, players' information, league standings, top scorers, and team data.
 
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/Databricks%20Pipeline.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/pipeline_run.png?raw=true" />
   <br>
    <sub><b>Medallion Architectural Pipeline</b></sub>
 </div>
