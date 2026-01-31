@@ -61,6 +61,6 @@ Upon refresh, the following dashboard provides a **swift** weekly updated view o
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/weekly%20league%20report.png?raw=true" />
   <br>
-   <sub><b>Data Factory Pipeline</b></sub>
+   <sub><b>Weekly performance insights</b></sub>
 </div>
 <br>
