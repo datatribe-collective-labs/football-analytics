@@ -1,11 +1,11 @@
-## Implementing Football Analytics Pipeline Using Azure, Databricks, and Delta Lake
+<img width="1563" height="684" alt="Databricks Pipeline" src="https://github.com/user-attachments/assets/bd81dee7-5c3d-4479-84e1-5f0d1850776b" />## Implementing Football Analytics Pipeline Using Azure, Databricks, and Delta Lake
 <!-- <br> -->
 
 This project presents an end-to-end data engineering solution for analyzing football events in the English Premier League during the 2025/2026 season. The goal is to design a scalable, automated, and analytics-ready data platform that ingests weekly football activities data and transforms it to support analysis over the course of the season.
 
 #### Data Extraction & loading Pipeline.
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Az%20data%20factory%20pipeline.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/Az%20data%20factory%20pipeline.png?raw=true" />
   <br>
    <sub><b>Data Factory Pipeline</b></sub>
 </div>
@@ -24,7 +24,7 @@ The Lookup activity reads this JSON file to determine the extraction parameters 
 As a result, the pipeline separates the incoming data into dedicated folders for football clubs' information, players' information, league standings, top scorers, and team data.
 
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Databricks%20Pipeline.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/Databricks%20Pipeline.png?raw=true" />
   <br>
    <sub><b>Medallion Architectural Pipeline</b></sub>
 </div>
@@ -48,7 +48,7 @@ Ultimately, the entire pipeline is scheduled to run every week to stay aligned w
 
 #### Weekly Performance Dashboard.
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/Football%20analytics%20dashboard.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/Football%20analytics%20dashboard.png?raw=true" />
   <br>
    <sub><b>Data Factory Pipeline</b></sub>
 </div>
