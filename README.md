@@ -2,7 +2,7 @@
 <!-- <br> -->
 
 ## Problem Statement
-Football leagues evolve every week, with each matchday determining league positions, manager performance views, and players' impact. However, stakeholders often rely on fragmented reports that fail to capture how performance changes week by week and what drives those changes.
+Football leagues evolve every week, with each matchday determining league positions, manager performance views, and players' impact. However, stakeholders often rely on fragmented reports which often take time and fail to capture how performance changes week by week and what drives those changes in one piece.
 This creates a challenge for decision-makers who need to **speedily** assess:
 - how league standings shift after each weekend,
 - whether managers are maintaining or improving their win effectiveness over time,
@@ -56,7 +56,7 @@ Ultimately, the entire pipeline is scheduled to run every week to stay aligned w
 
 #### Weekly Performance Dashboard.
 
-Upon refresh, the following dashboard provides a weekly updated view of league, manager, and player performance, enabling stakeholders to track momentum, identify performance drivers, and make informed decisions throughout the season.
+Upon refresh, the following dashboard provides a **swift** weekly updated view of league, manager, and player performance, enabling stakeholders to track momentum, identify performance drivers, and make informed decisions throughout the season.
 
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/weekly%20league%20report.png?raw=true" />
