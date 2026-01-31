@@ -43,7 +43,7 @@ display(bronze_players_details)
 # Write players details to the data lake and save as table
 bronze_players_details.write \
     .format("delta") \
-        .mode("append") \
+        .mode("overwrite") \
             .partitionBy("ingestion_ts") \
             .option("path","abfss://bronze@footballanalyticstorage.dfs.core.windows.net/players_details") \
                 .saveAsTable("db_ws.bronze.players_details")
