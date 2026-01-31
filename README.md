@@ -55,6 +55,9 @@ Before being written to the Gold layer in Delta Lake, the final datasets were op
 Ultimately, the entire pipeline is scheduled to run every week to stay aligned with the latest English Premier League match results.
 
 #### Weekly Performance Dashboard.
+
+Upon refresh, the following dashboard provides a weekly updated view of league, manager, and player performance, enabling stakeholders to track momentum, identify performance drivers, and make informed decisions throughout the season.
+
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/weekly%20league%20report.png?raw=true" />
   <br>
