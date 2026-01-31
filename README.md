@@ -48,7 +48,7 @@ Ultimately, the entire pipeline is scheduled to run every week to stay aligned w
 
 #### Weekly Performance Dashboard.
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/Football%20analytics%20dashboard.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/weekly%20league%20report.png?raw=true" />
   <br>
    <sub><b>Data Factory Pipeline</b></sub>
 </div>
