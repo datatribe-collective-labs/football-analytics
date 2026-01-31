@@ -47,7 +47,7 @@ display(bronze_league_standing)
 # Write the bronze league standing to the data lake and save as table
 bronze_league_standing.write \
   .format("delta") \
-    .mode("append") \
+    .mode("overwrite") \
       .partitionBy("ingestion_ts") \
         .option("path","abfss://bronze@footballanalyticstorage.dfs.core.windows.net/league_standing") \
           .saveAsTable("db_ws.bronze.league_standing")
