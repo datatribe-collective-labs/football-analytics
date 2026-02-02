@@ -54,12 +54,12 @@ Before being written to the Gold layer in Delta Lake, the final datasets were op
 
 Ultimately, the entire pipeline is scheduled to run every week to stay aligned with the latest English Premier League match results.
 
-#### Weekly Performance Dashboard.
+#### Weekly Performance Dashboard After 24 Games (2nd Fedruary, 2026).
 
 Upon refresh, the following dashboard provides a **swift** weekly updated view of league, manager, and player performance, enabling stakeholders to track momentum, identify performance drivers, and make informed decisions throughout the season.
 
 <div align="center">
-  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/weekly%20league%20report.png?raw=true" />
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/report_2.png?raw=true" />
   <br>
    <sub><b>Weekly performance insights</b></sub>
 </div>
