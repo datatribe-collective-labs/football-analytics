@@ -82,11 +82,11 @@ Finally, each cluster is mapped to human-readable performance labels for insight
   <tr>
     <td align="center">
       <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/elbow.png?raw=true" height="300"><br>
-      <sub>Elbow method defining number of clusters</sub>
+      <sub><b>Elbow method defining number of clusters</b>b</sub>
     </td>
     <td align="center">
       <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/pca.png?raw=true" height="300"><br>
-      <sub>Performance segmentation</sub>
+      <sub><b>Performance segmentation</b>b</sub>
     </td>
   </tr>
 </table>
@@ -94,6 +94,6 @@ Finally, each cluster is mapped to human-readable performance labels for insight
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/segmentation%20explainability.png?raw=true" />
   <br>
-   <sub><b>CLuuster Segmentation Explainability</b></sub>
+   <sub><b>Cluster Segmentation Explainability</b></sub>
 </div>
 <br>
