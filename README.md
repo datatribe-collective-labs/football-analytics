@@ -1,4 +1,4 @@
-## Implementing Football Analytics Pipeline Using Azure, Databricks, Delta Lake and Databricks AI/BI for SWIFT Insights.
+## Implementing Football Analytics Pipeline Using Azure, Databricks, Delta Lake, Databricks AI/BI, and ML for SWIFT Insights.
 <!-- <br> -->
 
 ## Problem Statement
