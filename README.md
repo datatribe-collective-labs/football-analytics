@@ -71,7 +71,7 @@ Though the dashboard shows weekly insights, but there’s also a need to generat
 This project applies K-Means clustering to partition league performance data into distinct segments based on per-game performance metrics.
 
 In this context, K-Means is used as a distance-based unsupervised learning algorithm to group teams by minimizing their Euclidean distances. Feature scaling is applied before modeling to ensure that metrics measured on different scales contribute equally to the clustering process. But, while K-Means performs well on structured numerical data, its results can become harder to interpret as dimensionality increases.
-To address this, Principal Component Analysis (PCA) is introduced as a dimensionality reduction and visualization technique to learn about teams’ characteristic similarities and cluster separation.
+To address this, Principal Component Analysis is introduced as a dimensionality reduction and visualization technique to learn about teams’ characteristic similarities and cluster separation.
 
 Cluster explainability is achieved by analyzing cluster centroids, which represent the average performance profile culminating in points per game, win rate, and goal difference.
 
