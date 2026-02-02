@@ -65,7 +65,7 @@ Upon refresh, the following dashboard provides a **swift** weekly updated view o
 </div>
 <br>
 
-### Explainable Performance segmentation Analysis
+### Explainable Performance segmentation Analysis After 24 Games (2nd Fedruary, 2026)
 
 Though the dashboard shows weekly insights, but there’s also a need to generate insights into teams’ segmentation. 
 This project applies K-Means clustering to partition league performance data into distinct segments based on per-game performance metrics.
