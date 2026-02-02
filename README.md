@@ -90,3 +90,10 @@ Finally, each cluster is mapped to human-readable performance labels for insight
     </td>
   </tr>
 </table>
+
+<div align="center">
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/segmentation%20explainability.png?raw=true" />
+  <br>
+   <sub><b>CLuuster Segmentation Explainability</b></sub>
+</div>
+<br>
