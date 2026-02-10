@@ -9,7 +9,7 @@ This creates a challenge for decision-makers who need to **speedily** assess:
 - which players are consistently contributing through goals and assists,
 - and how team scoring intensity develops across the season.
 
-This project presents an end-to-end data engineering solution for **SWIFTLY** analyzing football events in the English Premier League during the 2025/2026 season, addresses this challenge by providing a weekly updated, season-level analytical view that integrates league standings, manager win rates, player performance metrics, and team scoring efficiency.
+This project presents an end-to-end data engineering & analytics solution for **SWIFT** insights into football events in the English Premier League during the 2025/2026 season. It provides weekly updates on league standings, manager win rates, player performance metrics, and team scoring efficiency through automated triggers.
 
 #### Data Extraction & loading Pipeline.
 <div align="center">
@@ -29,7 +29,7 @@ First, we uploaded a JSON configuration file to the data lake. This file contain
 
 The Lookup activity reads this JSON file to determine the extraction parameters and passes this information to the ForEach activity. The ForEach activity then iterates over each object in the array and dynamically drives the Copy activity, ensuring that data is extracted and stored in a structured manner.
 
-As a result, the pipeline separates the incoming data into dedicated folders for football clubs' information, players' information, league standings, top scorers, and team data.
+As a result, the pipeline separates the incoming data into dedicated folders for football clubs' information, players' information, league standings, top scorers, and teams' data.
 
 <div align="center">
   <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/pipeline_run.png?raw=true" />
@@ -38,7 +38,7 @@ As a result, the pipeline separates the incoming data into dedicated folders for
 </div>
 
 
-#### Medallion Architecture using the Inmon Data Warehousing Model
+#### Medallion Architecture using the Inmon Data Warehousing Model & Galaxy Schema
 The Inmon data model is a top-down approach to data warehousing that builds on a centralized enterprise data warehouse, which forms the basis for subsequent data marts.
 
 The project continues with the implementation of a medallion architecture using the Inmon data model on Azure Databricks for analytics-wide data consistency and integrity. In the Bronze layer, raw data is ingested in its native JSON format, transformed into tabular structures, partitioned, and appended to Delta Lake tables.
@@ -48,9 +48,9 @@ The Silver layer extends the workflow with more extensive data processing. This 
 The Gold layer introduces Slowly Changing Dimensions to model historical and analytical requirements. Football club information and season data do not require historical tracking, so Slowly Changing Dimension Type 1 was applied to these datasets.
 For players and managers, historical tracking is essential, as player performance evolves over time, and managers can be replaced mid-season. For this reason, Slowly Changing Dimension Type 2 was implemented. These tables introduce surrogate keys to handle record versioning and to prevent duplication issues that typically arise from expanding SCD Type 2 tables.
 
-In addition to the dimension tables, the project includes two fact tables. These were optimized through broadcast joins with the relevant dimension tables to efficiently track overall club performance across the duration of the league, as well as individual player metrics.
+In addition to the dimension tables, the project includes two fact tables in a galaxy schema. These were optimized through broadcast joins with the relevant dimension tables to efficiently track overall club performance across the duration of the league, as well as individual player metrics.
 
-Before being written to the Gold layer in Delta Lake, the final datasets were optimized using coalesce to reduce the number of output partitions. This was considered to help minimize small files, produce BI-friendly file sizes, and improve query performance for downstream analytics workloads.
+Before being written to the Gold layer in Delta Lake, the final datasets were optimized using "coalesce" to reduce the number of output partitions. This was considered to help minimize small files, produce BI-friendly file sizes, and improve query performance for downstream analytics workloads.
 
 Ultimately, the entire pipeline is scheduled to run every week to stay aligned with the latest English Premier League match results.
 
@@ -73,7 +73,7 @@ This project applies K-Means clustering to partition league performance data int
 In this context, K-Means is used as a distance-based unsupervised learning algorithm to group teams by minimizing their Euclidean distances. Feature scaling is applied before modeling to ensure that metrics measured on different scales contribute equally to the clustering process. But, while K-Means performs well on structured numerical data, its results can become harder to interpret as dimensionality increases.
 To address this, Principal Component Analysis is introduced as a dimensionality reduction and visualization mechanism to learn about teams’ characteristic similarities and cluster separations.
 
-Cluster explainability is achieved by analyzing cluster centroids, which represents the average performance profile for each football club, culminating in points per game, win rate, and goal difference.
+Cluster explainability is achieved by analyzing cluster centroids, which represents the average performance profile for each football club, culminating in insights into points per game, win rate, and goal difference.
 
 Ultimately, each cluster is mapped to human-readable performance labels for insights into teams’ segmentation by performance.
 
