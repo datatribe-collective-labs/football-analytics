@@ -44,12 +44,18 @@ The project continues with the implementation of a medallion architecture on Azu
 
 The Silver layer extends the workflow with more extensive data processing. This includes renaming columns, refining column name characters, dropping unnecessary fields, removing duplicates, and writing the cleaned and standardized datasets back to the Delta Lake.
 
+<div align="center">
+  <img src="https://github.com/datatribe-collective-labs/football-analytics/blob/main/images/football%20model.png?raw=true" />
+  <br>
+   <sub><b>Kimball-style Galaxy Schema</b></sub>
+</div>
+
 The Gold layer introduces Slowly Changing Dimensions to model historical and analytical requirements. Football club information and season data do not require historical tracking, so Slowly Changing Dimension Type 1 was applied to these datasets.
 For players and managers, historical tracking is essential, as player performance evolves over time, and managers can be replaced mid-season. For this reason, Slowly Changing Dimension Type 2 was implemented. These tables introduce surrogate keys to handle record versioning and to prevent duplication issues that typically arise from expanding SCD Type 2 tables.
 
 In addition to the dimension tables, the project includes two fact tables in a galaxy schema. These were optimized through broadcast joins with the relevant dimension tables to efficiently track overall club performance across the duration of the league, as well as individual player metrics.
 
-Before being written to the Gold layer in Delta Lake, the final datasets were optimized using "coalesce" to reduce the number of output partitions. This was considered to help minimize small files, produce BI-friendly file sizes, and improve query performance for downstream analytics workloads.
+Before writing to the Gold layer in Delta Lake, the final datasets were optimized using "coalesce" to reduce the number of output partitions. This was considered to help minimize small files, produce BI-friendly file sizes, and improve query performance for downstream analytics workloads.
 
 Ultimately, the entire pipeline is scheduled to run every week to stay aligned with the latest English Premier League match results.
 
