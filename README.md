@@ -49,6 +49,8 @@ The Silver layer extends the workflow with more extensive data processing. This 
   <br>
    <sub><b>Kimball-style Galaxy Schema</b></sub>
 </div>
+  <br>
+  <br>
 
 The Gold layer introduces Slowly Changing Dimensions to model historical and analytical requirements. Football club information and season data do not require historical tracking, so Slowly Changing Dimension Type 1 was applied to these datasets.
 For players and managers, historical tracking is essential, as player performance evolves over time, and managers can be replaced mid-season. For this reason, Slowly Changing Dimension Type 2 was implemented. These tables introduce surrogate keys to handle record versioning and to prevent duplication issues that typically arise from expanding SCD Type 2 tables.
