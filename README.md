@@ -38,10 +38,9 @@ As a result, the pipeline separates the incoming data into dedicated folders for
 </div>
 
 
-#### Medallion Architecture using the Inmon Data Warehousing Model & Galaxy Schema
-The Inmon data model is a top-down approach to data warehousing that builds on a centralized enterprise data warehouse, which forms the basis for subsequent data marts.
+#### Medallion Architecture Culminating In A Galaxy Schema
 
-The project continues with the implementation of a medallion architecture using the Inmon data model on Azure Databricks for analytics-wide data consistency and integrity. In the Bronze layer, raw data is ingested in its native JSON format, transformed into tabular structures, partitioned, and appended to Delta Lake tables.
+The project continues with the implementation of a medallion architecture on Azure Databricks for analytics-wide data consistency and integrity. In the Bronze layer, raw data is ingested in its native JSON format, transformed into tabular structures, partitioned, and appended to Delta Lake tables.
 
 The Silver layer extends the workflow with more extensive data processing. This includes renaming columns, refining column name characters, dropping unnecessary fields, removing duplicates, and writing the cleaned and standardized datasets back to the Delta Lake.
 
